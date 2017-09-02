@@ -1,0 +1,24 @@
+---
+---
+
+$brand-color: #BD1E1E;
+$brand-color-light: mix($brand-color,#fff,55%);
+$brand-color-dark: mix($brand-color,#000,75%);
+$accent-color: #FF6B6B;
+$accent-color-light: mix($accent-color,#fff,85%);
+$accent-color-dark: mix($accent-color,#000,85%);
+$color-light: #F5E2C8;
+$color-grey: #9B9B9B;
+$color-dark: #636363;
+$color-black: #1E1E24;
+$html-background-color: #fff;
+
+$font-family-header: "Muli", Arial, sans-serif;
+
+$font-family-body: "Open Sans", Arial, sans-serif;
+
+@import "elements";
+@import "layout";
+@import "blog";
+@import "navigation";
+@import "footer";

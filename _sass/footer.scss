@@ -1,0 +1,75 @@
+footer {
+  @extend section;
+  padding: 50px 0;
+  position: relative;
+  background: $color-black;
+  color: #fff;
+
+  a {
+    color: #999;
+    text-decoration: none;
+    transition: all .3s;
+
+    &:hover, &:active {
+      text-decoration: none;
+      h2 {
+        color: $brand-color !important;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 1.4em;
+    margin: 30px 0;
+    color: #ccc;
+    transition: all .3s;
+  }
+
+  .footer-columns {
+    display: flex;
+    flex-flow: wrap;
+    margin: -10px -10px 10px -10px;
+  }
+
+  a {
+    color: #999;
+    text-decoration: none;
+    transition: all .3s;
+
+    &:hover, &:active {
+      color: $brand-color;
+    }
+  }
+
+  .legal-line {
+    // width: 100%;
+    padding: 30px 0 0 0;
+    margin: 0;
+
+    p {
+      font-size: 110%;
+    }
+
+    a {
+      font-style: italic;
+    }
+  }
+}
+
+.footer-links {
+  width: 100%;
+  margin: 10px;
+  padding: 0;
+  flex: 1 0 180px;
+
+  li {
+    list-style: none;
+    margin: 15px 0;
+
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

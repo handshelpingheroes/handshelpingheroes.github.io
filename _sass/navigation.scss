@@ -1,0 +1,79 @@
+// $brand-color      : #1d7341;
+// $accent-color    : #185833;
+// $color-light     : #C9B9A4;
+// $color-light   : #b8ffd6;
+$dropDown: false;
+.navbar-default {
+  background-color: $brand-color;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+  .navbar-brand {
+    color: $color-light;
+    transition: all .3s;
+    &:hover, &:focus {
+      background-color: $brand-color-dark;
+      color: $color-light; }}
+  .navbar-text {
+    color: $color-light; }
+  .navbar-nav {
+    > li {
+      > a {
+        color: $color-light;
+        transition: all .3s;
+        &:hover,  &:focus {
+          background-color: $brand-color-dark;
+          color: $color-light; }}
+      @if $dropDown {
+        > .dropdown-menu {
+          background-color: $brand-color;
+          > li {
+            > a {
+              color: $color-light;
+              &:hover,  &:focus {
+                color: $color-light;
+                background-color: $accent-color; }}
+            &.divider {
+              background-color: $accent-color;}}}}}
+    @if $dropDown {
+      .open .dropdown-menu > .active {
+        > a, > a:hover, > a:focus {
+          color: $color-light;
+          background-color: $accent-color-dark; }}}
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $color-light;
+        background-color: $accent-color-dark; }}
+    > .open {
+      > a, > a:hover, > a:focus {
+        color: $color-light;
+        background-color: $accent-color; }}}
+  .navbar-toggle {
+    border-color: $accent-color;
+    &:hover, &:focus {
+      background-color: $accent-color; }
+    .icon-bar {
+      background-color: $color-light; }}
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $color-light; }
+  .navbar-link {
+    color: $color-light;
+    &:hover {
+      color: $color-light; }}}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu {
+    > li > a {
+      color: $color-light;
+      &:hover, &:focus {
+        color: $color-light; }}
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $color-light;
+        background-color: $accent-color-dark; }}}
+}
+
+// .active {
+//   background-color: $brand-color-dark;
+//   color: $color-light;
+// }

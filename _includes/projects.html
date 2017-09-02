@@ -1,0 +1,11 @@
+<div class="row">
+{% for project in site.data.projects limit:include.limit %}
+  <div class="col-xs-12 col-sm-4 projects">
+    <a href="/projects/{{ project.name }}">
+      <img src="/assets/images/projects/{{ project.image }}" alt="{{ project.name }}">
+      <h1>{{ project.name }}</h1>
+      <h3>{{ project.description }}</h3>
+    </a>
+  </div>
+{% endfor %}
+</div>

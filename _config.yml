@@ -1,0 +1,22 @@
+# jekyll-seo-tag
+title: Hands Helping Heroes
+url: "LOCALHOST"
+email: handshelpingheroes.club@masonohioschools.com
+description: William Mason High School's student chapter of the Association for Computing Machinery.
+logo: /assets/images/logo.png
+
+# data page generator
+# page_gen:
+# - data: group
+#   name: name
+#   dir: groups
+
+# general
+
+paginate: 10
+paginate_path: "/blog/:num/"
+permalink: "/blog/:title"
+
+plugins:
+  - "jekyll-seo-tag"
+  - "jekyll-archives"

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+  <link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/touch-icon.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,600|Open+Sans:400,400i,600,600i" rel="stylesheet">
+  <script src="https://use.fontawesome.com/b7382f697b.js"></script>
+</head>
+<body>
+  {% include nav.html %}
+
+  {{ content }}
+
+  <footer>
+    <div class="container">
+      <a href="{{ site.url }}"><h2>{{ site.title }}</h2></a>
+      <p>{{ site.description }}</p>
+    </div>
+    <div class="legal-line">
+      <p class="container">
+        &copy; {{ site.time | date: '%Y' }}
+        &bull;
+        Design by <a href="https://daltoncraven.tech/">Dalton Craven</a>
+      </p>
+    </div>
+  </footer>
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+</body>
+</html>
